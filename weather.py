@@ -5,8 +5,6 @@ from typing import Literal
 import json
 import ssl
 
-# from wind import WindDirection
-from coordinates import Coordinates
 import config
 import wind
 
@@ -55,11 +53,9 @@ def _parse_openweather_response(openweather_response: str) -> Weather:
     )
 
 
-def get_weather(coordinates=Coordinates) -> Weather:
+def get_weather(latitude, longitude) -> Weather:
     """Requests the weather in OpenWeather API and returns it"""
-    openweather_response = _get_openweather_response(
-        longitude=coordinates.longitude, latitude=coordinates.latitude
-    )
+    openweather_response = _get_openweather_response(latitude, longitude)
     weather = _parse_openweather_response(openweather_response)
     return weather
 
