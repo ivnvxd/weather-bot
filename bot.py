@@ -4,9 +4,9 @@ import logging
 
 import messages
 
-# import config
-# API_TOKEN = config.BOT_API_TOKEN
-API_TOKEN = getenv("BOT_TOKEN")
+import config
+API_TOKEN = config.BOT_API_TOKEN
+# API_TOKEN = getenv("BOT_TOKEN")
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
