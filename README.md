@@ -12,11 +12,11 @@ https://t.me/ve_weather_bot
 4. Create an account on [OpenWeatherMap](https://home.openweathermap.org/users/sign_up)
 5. Copy your OpenWeather API token into `config.py`:<br />
    `OPENWEATHER_API_KEY = 'Paste your OpenWeather API token here'`
-6. Go to the project root directory and install the virtualenv library using pip and create a virtual environment. Run the following commands respectively:
+6. Optional: Go to the project root directory and install the virtualenv library using pip and create a virtual environment. Run the following commands respectively:
    * `pip install virtualenv`
    * `virtualenv venv`
    * `source venv/bin/activate`
-7. Download the all dependencies in the requirements.txt using `pip install -r requirements.txt`
+7. Download and install all dependencies in the requirements.txt using `pip install -r requirements.txt`
 8. Start bot: `$ python bot.py`
 9. Open your bot in Telegram and start it with `/start` command
 
@@ -26,4 +26,9 @@ https://t.me/ve_weather_bot
 * OpenWeather API
 
 ## Notes
-Only works on iOS and Android mobile devices, not on Telegram desktop app because it does not provide device location.
+Weather response based on current location only works on iOS and Android mobile devices, not on Telegram desktop app because it does not provide device location.
+
+## TODO
+* Add `aiohttp` support to make async http requests
+* Add other cities, not only current location
+* Add OpenWeather forecast
