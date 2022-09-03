@@ -1,4 +1,8 @@
 # WeatherBot
+![GitHub](https://img.shields.io/github/license/venyxD/weather-bot)
+![GitHub last commit](https://img.shields.io/github/last-commit/venyxd/weather-bot)
+![GitHub repo size](https://img.shields.io/github/repo-size/venyxd/weather-bot)
+
 Telegram bot that provides weather data from the OpenWeather API based on your current location.
 
 ![](preview.gif)
