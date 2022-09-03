@@ -1,6 +1,8 @@
 # WeatherBot
 Telegram bot that provides weather data from the OpenWeather API based on your current location.
+
 ![](preview.gif)
+
 ## Demo
 https://t.me/ve_weather_bot
 
